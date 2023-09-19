@@ -1,0 +1,143 @@
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.container {
+  flex-flow: column;
+  &--header {
+    height: 3em;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: black;
+
+    &__menu {
+      flex: 0 0 auto;
+      margin: 0.5em 1em 0.5em 1em;
+      box-sizing: border-box;
+      border: 3px solid red;
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.5em;
+      }
+    }
+    &__menu:hover {
+      transform: rotateY(180deg) translate3d(0, 0, 120px);
+      transition: transform 1s;
+
+      transform-style: preserve-3d;
+      background-color: aqua;
+    }
+    &__menu-right {
+      flex: 0 0 5em;
+      margin: 0.5em 1em 0.5em 1em;
+      box-sizing: border-box;
+      border: 3px solid red;
+
+      a {
+        font-size: 1.5em;
+        color: white;
+        text-decoration: none;
+      }
+      margin-left: auto;
+    }
+    &__menu-right:hover {
+      transition: transform 1s;
+      transform-style: preserve-3d;
+      transform: rotateX(180deg);
+      background-color: gray;
+    }
+  }
+  &--banner {
+    height: 8em;
+    background-color: red;
+  }
+  &--divisoria {
+    background-color: cadetblue;
+    align-items: center;
+    flex-wrap: row wrap;
+    display: flex;
+  }
+  .item {
+    flex: 0 0 auto;
+    height: 4em;
+    background-color: orange;
+    color: white;
+    font-size: 1em;
+    word-break: break-all;
+  }
+  &--divisoria:hover {
+    transform: matrix(0.002, -0.256, 1.522, 2.333, -51.533, -1.989);
+    transition: all 2s;
+  }
+  &--divisoria:hover > .item {
+    transform: matrix(0.00002, 1219.256, 213, 2.333, 12.533, -221.989);
+    background-color: color(display-p3 1 1 1);
+
+    transition: all 7s;
+  }
+  &--content {
+    height: 80vh;
+    background-color: blue;
+    display: flex;
+    flex-wrap: row wrap;
+    &__leftBar {
+      flex: 0 0 15em;
+      flex-flow: column;
+      display: flex;
+      box-sizing: border-box;
+
+      .menuItem {
+        text-align: center;
+
+        height: 3em;
+        background-color: blueviolet;
+      }
+      .menuItem:hover {
+        transition: all 1.3s;
+        transform: scale(1.4);
+        border-bottom: 5px;
+        background-color: color(display-p3 1 1 1);
+      }
+    }
+    &__mainContent {
+      justify-content: center;
+      align-items: center;
+      flex: 1 1 auto;
+      background-color: gray;
+      word-break: break-all;
+      display: grid;
+      grid-template-rows: 3em 3em 3em 3em 3em 3em;
+      grid-template-columns: 3em 3em 3em 3em 3em 3em;
+    }
+    &__mainContent:hover {
+      transition: all 10s;
+      background: linear-gradient(
+        rgba(255, 0, 0, 1) 0%,
+        rgba(255, 154, 0, 1) 10%,
+        rgba(208, 222, 33, 1) 20%,
+        rgba(79, 220, 74, 1) 30%,
+        rgba(63, 218, 216, 1) 40%,
+        rgba(47, 201, 226, 1) 50%,
+        rgba(28, 127, 238, 1) 60%,
+        rgba(95, 21, 242, 1) 70%,
+        rgba(186, 12, 248, 1) 80%,
+        rgba(251, 7, 217, 1) 90%,
+        rgba(255, 0, 0, 1) 100%
+      );
+    }
+    &__mainContent:hover > .grid-item {
+      border: solid 1px black;
+      background-color: color(display-p3 0 0.3 1);
+      height: 100%;
+      width: 100%;
+      transform: matrix(10, -20, 10, 20, 200, -200);
+      background-color: color(display-p3 1 1 1);
+
+      transition: all 6s;
+    }
+  }
+  &--footer {
+    height: 5em;
+    background-color: black;
+  }
+}
