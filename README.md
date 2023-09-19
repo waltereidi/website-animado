@@ -1,29 +1,3 @@
-# website-animado
-
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+<h1>Pagina recheada de animações css de transições</h1>
+<a href="https://rococo-selkie-e7bb2c.netlify.app/" target="_blank">Veja o site no netlify!</a>
+<img src="https://github.com/waltereidi/website-animado/assets/6370415/d488ac3c-ce12-4854-bc1d-11ac6128af46">
